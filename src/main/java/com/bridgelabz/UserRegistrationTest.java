@@ -38,10 +38,4 @@ public class UserRegistrationTest {
 
         assertTrue(validatorObj.validatePassword("@qwerty!@*"));
     }
-    @Test
-    public void givenMessage_whenNotSad_ShouldReturnHappy() {
-        UserRegistration moodAnalyser = new UserRegistration();
-        String mood = moodAnalyser.analyzeMood("This is a sad message");
-        assertEquals("Happy", mood);
-    }
 }
